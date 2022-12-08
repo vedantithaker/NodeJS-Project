@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      input {
+        margin: 4px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pagination and Search</h1>
+    <p>Search for movie:</p>
+    <div style="text-align:right;width:400px;border:1px dashed #6495de;padding:16px;">
+      <form action="/api/movies2" method="post">
+        <label for="name">Title:</label>
+        <input id="title" type="text" name="title"/><br />
+        <label for="page">Page:</label>
+        <input id="pgno" type="text" name="pgno"/><br />
+        <label for="perpage">Per Page:</label>
+        <input id="perpg" type="email" name="perpg"/><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div><br /><br/>
+  </body>
+</html>

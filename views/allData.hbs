@@ -1,0 +1,21 @@
+<h2>Home Page</h2>
+<table>
+    <th>Plot</th>
+    <th>Title</th>
+    <th>Director</th>
+    <th>Year</th>
+    <th>Rated</th>
+    <th>Poster</th>
+    {{#each data}}
+   <tr>
+        <td>{{plot}}</td>       
+        <td>{{title}}</td>
+        <td>{{director}}</td>
+        <td>{{year}}</td>
+        <td>{{rated}}</td>
+        <td><img style="height:70px;width:65px" src={{poster}}></td>
+    </tr>
+
+    {{/each}}
+   
+</table>

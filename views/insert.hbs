@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      input {
+        margin: 4px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Insert a Movie</h1>
+    <div style="text-align:right;width:400px;border:1px dashed #6495de;padding:16px;">
+      <form action="/api/movies" method="post">
+        <label for="title">Title:</label>
+        <input id="title" type="text" name="title"/><br />
+        <label for="plot">Plot:</label>
+        <input id="plot" type="text" name="plot"/><br />
+        <label for="director">Director:</label>
+        <input id="director" type="text" name="director"/><br />
+        <label for="yr">Year:</label>
+        <input id="year" type="text" name="year"/><br />
+        <label for="rated">Rated:</label>
+        <input id="rated" type="text" name="rated"/><br />
+        <input type="submit" value="Insert" />
+      </form>
+    </div><br /><br/>
+  </body>
+</html>
